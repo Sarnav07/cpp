@@ -18,6 +18,18 @@ int main() {
     //P3
     for ( int d=0; d<=25; d+=5) {
         std::cout<<"the values are"<<d<<"\n";
-        
+
     }
+
+    //P4
+    int factorial=1;
+    int i;
+    std::cin>>i;
+
+    while(i>0) {
+        factorial*=i;
+        i--;
+    }
+
+    std::cout<<"The factorial of is"<<factorial<<endl;
 }
