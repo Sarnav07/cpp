@@ -4,20 +4,29 @@ using namespace std;
 class Solution{
     public:
 
-    int countDigits(int n) { 
+    int countDigits(int a) { 
         int count=0;
-        while( n>0) {
-            n%10;
-            n=n/10;
+        while( a>0) {
+            a%10;
+            a=a/10;
             count+=1;
     }
     return count;
 }
+    
+    int reversedNumber(int b) {
+        int reverse=0;
+        while(b>0) {
+            reverse=(reverse*10)+(b%10);
+            b=b/10;
+        }
+        return reverse;
+    }
 };
 
 int main() {
     Solution obj;
-    std::cout<<obj.countDigits(16534);
+    std::cout<<obj.countDigits(16534)<<std::endl;
+    std::cout<<obj.reversedNumber(1234);
 
-    // std::cout<<obj.reverseNumber(123451231);
 }
