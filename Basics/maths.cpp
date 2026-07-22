@@ -22,11 +22,22 @@ class Solution{
         }
         return reverse;
     }
+
+    bool palindrome(int c) {
+        int reverseee=reversedNumber(c);
+        if(reverseee==c) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 };
 
 int main() {
     Solution obj;
-    std::cout<<obj.countDigits(16534)<<std::endl;
-    std::cout<<obj.reversedNumber(1234);
+    // std::cout<<obj.countDigits(16534)<<std::endl;
+    // std::cout<<obj.reversedNumber(1234);
+    std::cout<<obj.palindrome(121341413);
 
 }
